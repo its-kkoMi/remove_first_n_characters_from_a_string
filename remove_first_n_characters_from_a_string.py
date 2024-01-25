@@ -7,4 +7,12 @@ word = str(input("Enter a word: "))
 number_of_characters = int(input(f"Enter a number from 0 to {len(word)}: "))
 
 # Remove character using def
+
+def remove_characters(word, number_of_characters):
+    print('\nNew String:\n')
+    new_string = word[number_of_characters:]
+    return new_string
+
 # Print new string
+
+print(remove_characters(word, number_of_characters))
